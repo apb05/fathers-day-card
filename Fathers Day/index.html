@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Father's Day Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="celebrationCanvas" aria-hidden="true"></canvas>
+    <main class="page-shell">
+      <article class="card">
+        <div class="card-header">
+          <p class="eyebrow">Father's Day</p>
+          <h1>For Dad</h1>
+          <div class="title-rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="gif-frame" aria-live="polite">
+          <img
+            class="reaction-gif active"
+            data-gif="superhero"
+            src="1948770659happy-fathers-day-gif-superhero-dad.gif"
+            alt="Animated Father's Day superhero scene"
+          />
+          <img
+            class="reaction-gif"
+            data-gif="office"
+            src="the-office.gif"
+            alt="Animated office celebration reaction"
+          />
+          <img
+            class="reaction-gif"
+            data-gif="dance"
+            src="1711588811064.gif"
+            alt="Animated celebratory dance reaction"
+          />
+        </div>
+
+        <div class="gif-controls" role="group" aria-label="Choose a Father's Day gif">
+          <button class="gif-chip active" type="button" data-gif="superhero" aria-pressed="true" onclick="setGifMode('superhero')">Hero</button>
+          <button class="gif-chip" type="button" data-gif="office" aria-pressed="false" onclick="setGifMode('office')">Hype</button>
+          <button class="gif-chip" type="button" data-gif="dance" aria-pressed="false" onclick="setGifMode('dance')">Dance</button>
+        </div>
+
+        <div class="message">
+          <p>
+            The older I get, the more I realize how deeply I love all of you, how important you are to
+            me, and how much I cherish the time we get to spend together.
+          </p>
+          <p>
+            Dad, you’ve inspired me to become a better man in so many ways. You’ve known when to be
+            tough with me, when to guide me, and when to be gentle and understanding. I’m grateful for
+            the thought, care, and love you put into our family every day.
+          </p>
+          <p>
+            Your faith journey has also been incredibly inspiring, especially through these worrying
+            times. Thank you for everything you do and for the man you continue to be.
+          </p>
+          <p>I’m proud of you, Dad. I love you.</p>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
